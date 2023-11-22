@@ -1,7 +1,21 @@
 public class SmartTv {
     boolean ligada=false;
-    int canal=1;
+    int canal=5;
     int volume=20;
+
+    public void mudarCanal(int novoCanal){
+        canal = novoCanal;
+    }
+
+    public void aumentarCanal(){
+        canal++;
+        System.out.println("Aumentando o canal para: " + canal);
+    }
+
+    public void diminuirCanal(){
+        canal--;
+        System.out.println("Diminuindo o canal para: " + canal);
+    }
 
       public void aumentarVolume(){
         volume++;
@@ -23,4 +37,3 @@ public class SmartTv {
 }
     
 
-  
